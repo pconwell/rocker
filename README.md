@@ -4,7 +4,7 @@ This is 100% the work and credit of https://hub.docker.com/u/rocker/ and the htt
 
 ## Quickstart
 
-docker run -d --name=rstudio -p 8787:8787 -e USER=<name> -e PASSWORD=<password> rocker/rstudio
+`$ docker run -d --name=rstudio -p 8787:8787 -e USER=<name> -e PASSWORD=<password> rocker/rstudio`
 
 Once the container has installed, visit localhost:8787 in your browser and log in with the username and password you provided during install. (If you do not provide a username or password, the default is rstudio:rstudio). It is highly recommended to customize your username and password if you are going to open this container/port to the web.
 
