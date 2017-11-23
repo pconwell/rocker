@@ -1,19 +1,29 @@
 ## Quickstart
 
->  `$ docker build --tag rstudio_3.4.2 https://github.com/pconwell/rstudio.git#master`
->  `$ docker run -d --name=rstudio -p 8787:8787 -e USER=<username> -e PASSWORD=<password> rstudio_3.4.2
+>
+```
+$ docker build --tag rstudio_3.4.2 https://github.com/pconwell/rstudio.git#master`
+$ docker run -d --name=rstudio -p 8787:8787 -e USER=<username> -e PASSWORD=<password> rstudio_3.4.2
+```
 
-`$ docker run -d --name=rstudio -p 8787:8787 -e USER=<name> -e PASSWORD=<password> rocker/rstudio`
+`$ docker run -d --name=rstudio -p 8787:8787 -e USER=<name> -e PASSWORD=<password> pconwell/rstudio`
 
-Once the container has installed, visit localhost:8787 in your browser and log in with the username and password you provided during install. (If you do not provide a username or password, the default is rstudio:rstudio). It is highly recommended to customize your username and password if you are going to open this container/port to the web.
+Once the container has installed, visit localhost:8787 in your browser and log in with the username and password you provided during install.
 
 ## Notes
+
+### How to Use
+
+> add instructions here later
 
 ### Access a root shell for a running rstudio container instance
 
 `$ docker exec -ti rstudio bash`
 
 You can now perform maintenance operations requiring root behavior such as apt-get, adding/removing users, etc. If you did not specify a name during install, you will need to find the containers ID and replace `rstudio` with the containers ID.
+
+### Source
+This container is just a wrapper for the https://hub.docker.com/r/rocker/rstudio/ project. I needed some packages intall and this container automatically installs those packages for me. You are almost certainly better off using the original project unless you just happen to need the same packages I need.
 
 ### More help
 
