@@ -11,4 +11,5 @@ RUN apt-get update \
     libpng-dev \
     libgdal-dev \
     texlive-latex-base \
-    texlive-latex-extra
+    texlive-latex-extra \
+    texlive-fonts-recommended
