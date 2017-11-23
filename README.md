@@ -1,8 +1,7 @@
-## Credit
-
-This is 100% the work and credit of https://hub.docker.com/u/rocker/ and the https://hub.docker.com/r/rocker/rstudio/ project. I have forked the project because 1) develompent has slowed, and 2) I don't want to get left in the dark if the project is abaondoned/removed. I highly recommend you go to the source project if you plan to use this container.
-
 ## Quickstart
+
+>  `$ docker build --tag rstudio_3.4.2 https://github.com/pconwell/rstudio.git#master`
+>  `$ docker run -d --name=rstudio -p 8787:8787 -e USER=<username> -e PASSWORD=<password> rstudio_3.4.2
 
 `$ docker run -d --name=rstudio -p 8787:8787 -e USER=<name> -e PASSWORD=<password> rocker/rstudio`
 
