@@ -9,4 +9,6 @@ RUN apt-get update \
     openssh-server \
     libjpeg-dev \
     libpng-dev \
-    libgdal-dev
+    libgdal-dev \
+    texlive-latex-base \
+    texlive-latex-extra
