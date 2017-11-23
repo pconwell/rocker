@@ -6,4 +6,6 @@ ENV PATH=/usr/lib/rstudio-server/bin:$PATH
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
-    openssh-server
+    openssh-server \
+    libjpeg-dev \
+    libpng-dev
