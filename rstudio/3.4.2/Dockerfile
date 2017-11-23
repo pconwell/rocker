@@ -15,5 +15,5 @@ RUN apt-get update \
     texlive-latex-extra \
     texlive-fonts-recommended \
     lmodern \
-    && git config --global user.email "patrick.conwell@gmail.com" \
-    && git config --global user.name "pconwell (docker)"
+    && runuser --login pconwell --command 'git config --global user.email "patrick.conwell@gmail.com"'
+    && runuser --login pconwell --command 'git config --global user.name "pconwell (docker)"'
