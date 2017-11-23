@@ -12,4 +12,5 @@ RUN apt-get update \
     libgdal-dev \
     texlive-latex-base \
     texlive-latex-extra \
-    texlive-fonts-recommended
+    texlive-fonts-recommended \
+    lmodern
