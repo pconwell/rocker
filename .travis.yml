@@ -2,12 +2,6 @@ sudo: required
 
 services:
   - docker
-
-## Make sure all containers build without error.
-before_install: 
-#  - docker build -t rocker/r-base r-base
-#  - docker build -t rocker/rstudio rstudio
-  - docker build -t pconwell/rstudio
   
 ## A few simple / crude tests
 script:
