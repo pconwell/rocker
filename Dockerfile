@@ -1,4 +1,4 @@
-FROM rocker/rstudio:3.4.2
+FROM rocker/rstudio
 ## Work-around to make Docker Hub use the Dockerfile from https://github.com/rocker-org/rocker-versioned/rstudio
 
 ARG RSTUDIO_VERSION
